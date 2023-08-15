@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="row">
+    <div class="offset-md-3 col-md-6 col-sm-12">
+        <div class="card">
+            <div class="card-header">
+                경겜마고 급식메뉴
+            </div>
+            <div class="card-body">
+                <h4>{{date}}</h4>
+                <ul>
+                    {% for menu in menus %}
+                        <li> {{menu}} </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
